@@ -33,7 +33,7 @@ const Gallery = () => {
                       scrub: true,
                     },
               })
-              .to('.content', {clipPath: "polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%)"})
+              .to('.content1', {clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"})
       }, section);
 
       return () => ctx.revert();
@@ -41,10 +41,18 @@ const Gallery = () => {
     }, []);
 
   return (
-      <div id='gallery' ref={sectionRef}>
-          <div className="content">
-              <video src='../../../public/basketVideo_AdobeExpress_xkcnzr.mp4' autoPlay muted loop />
-          </div>
+    <div id='gallery' ref={sectionRef}>
+      <div className="container">
+
+          <div className="content1">
+              <img src='../../../public/290628beaf1d7add6159b0c0730a9ff8b21040ae4585fde305a5ca7e75494ed6.webp' alt='' />
+        </div>
+        
+        <div className="content2">
+              <img src='../../../public/istockphoto-515173623-612x612.jpg' alt='' />
+        </div>
+
+      </div>
     </div>
   )
 }
