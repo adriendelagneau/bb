@@ -19,7 +19,7 @@ const Landing = () => {
 
   return (
     <div id='landing'>
-      <div className='textFirst'>episode #1</div>
+      <div className='textFirst'>episode #001</div>
       <div className="title">
         <div>
           {splitText}

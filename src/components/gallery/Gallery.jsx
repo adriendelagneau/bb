@@ -47,10 +47,10 @@ const Gallery = () => {
     <div id='gallery' ref={sectionRef}>
       <div className="container">
         <div className="content1">
-          <img src='../../../public/290628beaf1d7add6159b0c0730a9ff8b21040ae4585fde305a5ca7e75494ed6.webp' alt='' />
+          <img src='https://res.cloudinary.com/dos8mey8r/image/upload/v1678614339/xfujd0hpjwaqfuehk8ci.png' alt='' />
         </div>
         <div className="content2">
-          <img src='../../../public/istockphoto-515173623-612x612.jpg' alt='' />
+          <img src='https://res.cloudinary.com/dos8mey8r/image/upload/v1678450919/ubhzedognz3ibab2ggux.webp' alt='' />
         </div>
       </div>
     </div>
