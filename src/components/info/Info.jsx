@@ -51,7 +51,7 @@ const Info = () => {
      
       <div className="container">
           <div className="imageContainer"  >
-            <video src='../../../public/basketVideo_AdobeExpress_xkcnzr.mp4' loop muted autoPlay alt='' />  
+            <video src='https://res.cloudinary.com/dos8mey8r/video/upload/v1661955132/shoes/basketVideo_AdobeExpress_xkcnzr.mp4' loop muted autoPlay alt='' />  
           </div>
       </div>
     </div>
