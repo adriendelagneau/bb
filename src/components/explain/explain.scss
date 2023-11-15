@@ -3,18 +3,44 @@
     height: 100vh;
     display: flex;
 
-
     font-family: 'Russo One', sans-serif;
-    font-size: 210px;
-    text-transform: uppercase;
 
     .container {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        padding: 0 3vw;
 
+        .top {
+            font-size: 210px;
+            text-transform: uppercase;
+        }
 
         .bottom {
-           text-align: right;
+        width: 100%;
+        display: flex;
+
+        justify-content: right;
+
+        .estla {
+            display: flex;
+
+            .st2 {
+                padding-right: 40px;
+            }
+        }
+
+        p {
+            color: aliceblue;
+            font-size: 27px;
+            width: 30vw;
+            padding: 60px 20px 0 0;
+        }
+
+        div  {
+            font-size: 160px;
+            text-transform: uppercase;
+        }
         }
     }
 

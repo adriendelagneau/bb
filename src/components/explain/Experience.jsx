@@ -7,10 +7,13 @@ const Experience = () => {
 
 
     const text = "experience";
-  const text2 = "est là.";
+  const text2 = "est";
+  const text3 = "là.";
+
     
     const splitText = textSplitter(text);
     const splitText2 = textSplitter(text2);
+    const splitText3 = textSplitter(text3);
 
     
     const experienceRef = useRef(null);
@@ -46,11 +49,14 @@ const Experience = () => {
               <div className='top'>
               {splitText}
           </div>
-          <div className='bottom'>
-          {splitText2}
+              <div className='bottom'>
+                  <p>Connues ou moins connues, j’accueille dans #lvr des personnalités inspirantes qui ont un parcours hors du commun.</p>
+          <div className='estla'>
+          <div className='st2'>{splitText2}</div>
+          <div>{ splitText3}</div>
           </div>
+                </div>
           </div>
-
     </div>
   )
 }
