@@ -31,12 +31,12 @@ const Experience = () => {
             trigger: experience,
             start: 'top 50%',
             end: 'top 10%',
-                scrub: true,
-            markers: true
+            scrub: true,
+           // markers: true
           },
         })
-          .to(spans, {scale: 1, stagger: .05, translateY: '15%', ease: "power2.out" })
-  
+          .to(spans, { scale: 1, stagger: .05, translateY: '15%', ease: "power2.out" }, 'one')
+          .fromTo(".toto",{translateX: "-30%", opacity: 0}, { translateX: "0%", opacity: 1 },'one')
       }, experience);
   
       return () => ctx.revert();
@@ -50,7 +50,7 @@ const Experience = () => {
               {splitText}
           </div>
               <div className='bottom'>
-                  <p>Connues ou moins connues, j’accueille dans #lvr des personnalités inspirantes qui ont un parcours hors du commun.</p>
+                  <p className='toto'>Connues ou moins connues, j’accueille dans #lvr des personnalités inspirantes qui ont un parcours hors du commun.</p>
           <div className='estla'>
           <div className='st2'>{splitText2}</div>
           <div>{ splitText3}</div>
