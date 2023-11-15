@@ -20,7 +20,7 @@ const Gallery = () => {
         scrollTrigger: {
           trigger: section,
           start: 'top top',
-          end: () => `+=${section.clientHeight}`,
+          end: () => `+=${section.clientHeight }`,
           pin: true,
           scrub: true,
         },

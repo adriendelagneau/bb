@@ -8,13 +8,12 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Info = () => {
 
-  const sectionRef = useRef(null);
-  const containerRef = useRef(null)
+  const myRef = useRef(null);
 
   useLayoutEffect(() => {
     // GSAP animation setup
-    const section = sectionRef.current;
-    const container = containerRef.current
+    const section = myRef.current;
+  
 
     let ctx = gsap.context(() => {
             // pin the section
@@ -35,11 +34,12 @@ const Info = () => {
           start: 'top top',
           end: () => `+=${section.clientHeight}`,
           scrub: true,
-          markers: true,
+         // markers: true,
           invalidateOnRefresh: true
         },
       })
-        .to(container,  { clipPath: 'polygon(0 0, 0 0, 0 100%, 0% 100%)' })
+        .to(".container", { width: "100%", height: "100%" })
+      
        
     }, section);
 
@@ -47,13 +47,13 @@ const Info = () => {
   }, []);
     
   return (
-      <div id='info' ref={sectionRef}>
-          <div className="container">
-              <div className="imageContainer" ref={containerRef} >
-                <img src='../../../public/290628beaf1d7add6159b0c0730a9ff8b21040ae4585fde305a5ca7e75494ed6.webp' alt='' />  
-              </div>
-            
+    <div id='info' ref={myRef}>
+     
+      <div className="container">
+          <div className="imageContainer"  >
+            <video src='../../../public/basketVideo_AdobeExpress_xkcnzr.mp4' loop muted autoPlay alt='' />  
           </div>
+      </div>
     </div>
   )
 }

@@ -1,27 +1,38 @@
 #info {
     width: 100%;
     height: 100vh;
-    background: purple;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    position: relative;
+    font-size: 150px;
+    color: aliceblue;
+    text-transform: capitalize;
+    overflow: hidden;
+
+
+
 
     .container {
-        width: 50vw;
-        height: 50vh;
-        background: green;
-        position: relative;
+        width: 40%;
+        height: 40%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -o-transform: translateX(-50%) translateY(-50%);
 
         .imageContainer {
             width: 100%;
             height: 100%;
             overflow: hidden;
 
-            img {
+            video {
                 width: 100%;
                 height: 100%;
-               
+               object-fit: cover;
             }
         }
-    }
+}
 }
