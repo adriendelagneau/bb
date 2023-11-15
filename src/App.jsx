@@ -8,6 +8,7 @@ import Info from './components/info/Info';
 import gsap from 'gsap';
 import Header from './components/header/Header';
 import Text from './components/text/Text';
+import Experience from './components/explain/Experience';
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
   }, [])
 
 
-
+/*
   useLayoutEffect(() => {
 
     const section = appRef.current;
@@ -47,13 +48,15 @@ function App() {
     }, section);
     return () => ctx.revert();
   }, [])
-
+*/
+  
   return (
     <div className="App" ref={appRef}>
       <Header />
       <Landing />
       <Gallery />
       <Text />
+      <Experience />
       <Info />
       <Footer />
     </div>

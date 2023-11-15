@@ -27,9 +27,9 @@ const Text = () => {
         scrollTrigger: {
           trigger: container.current,
           scrub: true,
-          start: `bottom 40%`,
-          end: `+=${window.innerHeight}`,
-          markers: true
+          start: `top 70%`,
+          end: `bottom bottom`,
+         // markers: true
         },
         opacity: 1,
         ease: "none",
